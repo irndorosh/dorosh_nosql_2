@@ -1,0 +1,47 @@
+Читаємо датасет: 0it [00:00, ?it/s]Читаємо датасет: 10000it [00:00, 159289.06it/s]
+
+Завантажено статей: 10000
+
+Розподіл за категоріями (топ-10):
+category
+hep-ph      589
+cs.CV       426
+cs.LG       393
+quant-ph    345
+astro-ph    339
+hep-th      265
+cond-mat    251
+cs.CL       247
+math.AP     212
+math.PR     209
+Name: count, dtype: int64
+
+Розподіл за роками:
+year
+2016    502
+2017    495
+2018    493
+2019    494
+2020    758
+2021    752
+2022    754
+2023    779
+2024    985
+2025    246
+Name: count, dtype: int64
+
+Довжина анотацій (у словах):
+count    10000.000000
+mean       144.048700
+std         63.577031
+min          6.000000
+25%         96.000000
+50%        141.000000
+75%        187.000000
+max        497.000000
+Name: abstract, dtype: float64
+
+Приклад запису:
+{'id': '2103.05196', 'title': 'A Learning-Based Computational Impact Time Guidance', 'abstract': 'This paper investigates the problem of impact-time-control and proposes a learning-based computational guidance algorithm to solve this problem. The proposed guidance algorithm is developed based on a general prediction-correction concept: the exact time-to-go under proportional navigation guidance with realistic aerodynamic characteristics is estimated by a deep neural network and a biased command to nullify the impact time error is developed by utilizing the emerging reinforcement learning techniques. The deep neural network is augmented into the reinforcement learning block to resolve the issue of sparse reward that has been observed in typical reinforcement learning formulation. Extensive numerical simulations are conducted to support the proposed algorithm.', 'authors': 'Liu Zichao, Wang Jiang, He Shaoming, Shin Hyo-Sang, Tsourdos Antonios', 'year': 2021, 'category': 'cs.LG'}
+
+Збережено в data/arxiv_subset.parquet
